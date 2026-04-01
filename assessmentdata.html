@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before DATA Assessment</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:60px 0;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+
+h1,h2{
+    color:#0d3b66;
+    margin-bottom:20px;
+}
+
+button{
+    padding:12px 25px;
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#084298;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0d3b66,#0d6efd);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    color:#fff;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+/* Form */
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+form input, form textarea{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+form textarea{
+    grid-column:span 2;
+}
+
+form button{
+    grid-column:span 2;
+}
+
+.success{
+    margin-top:15px;
+    color:green;
+    font-weight:bold;
+}
+
+/* Whitepaper */
+.whitepaper{
+    background:#eef3ff;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+}
+
+footer{
+    background:#0d3b66;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>Prepare for Your DATA Assessment</h1>
+    <button onclick="scrollToSection()">Take Your DATA Assessment Now</button>
+</div>
+
+<div class="container">
+
+<!-- Before Assessment -->
+<section>
+    <div class="card">
+        <h2>Before DATA Assessment</h2>
+        <p>
+        Before performing a DATA assessment, you should clearly understand the common 
+        problem statements within your supply chain system.
+        </p>
+        <p>
+        Identify the technologies and processes currently used across functional domains 
+        of your supply chain. This preparation ensures you are ready for a meaningful evaluation.
+        </p>
+    </div>
+</section>
+
+<!-- How to Read Score -->
+<section>
+    <div class="card">
+        <h2>How to Read Your DATA Score</h2>
+        <p>
+        The DATA Score ranges from <strong>1 to 10</strong>.
+        </p>
+        <ul>
+            <li><strong>8–10:</strong> Highly sustainable and efficient supply chain</li>
+            <li><strong>7:</strong> Stable but requires monitoring</li>
+            <li><strong>Below 7:</strong> Significant scope for continuous improvement</li>
+        </ul>
+        <p>
+        A higher DATA Score indicates stronger digital maturity and operational excellence.
+        </p>
+    </div>
+</section>
+
+<!-- Assessment Process -->
+<section>
+    <div class="card">
+        <h2>Assessment Process</h2>
+        <p>
+        The evaluation identifies supply chain technologies and processes across 
+        21 functional domains.
+        </p>
+        <p>
+        A weighted average scoring model forms the foundation of your final DATA Score, 
+        based on responses to critical supply chain questions.
+        </p>
+        <p>
+        The final score determines your placement in DATA rankings.
+        </p>
+    </div>
+</section>
+
+<!-- Take Assessment -->
+<section>
+    <div class="card">
+        <h2>Take Assessment</h2>
+        <p>
+        After identifying risks and problem areas in your supply chain management systems, 
+        proceed with the DATA Assessment to build a more sustainable and resilient foundation.
+        </p>
+        <button onclick="alert('Assessment module coming soon!')">Take Assessment</button>
+        <button onclick="alert('Score checker coming soon!')" style="margin-left:10px;">Check DATA Score</button>
+    </div>
+</section>
+
+<!-- Twitter Section -->
+<section>
+    <div class="card">
+        <h2>Follow Us on Twitter</h2>
+        <p>Stay updated with insights, research updates, and supply chain innovations.</p>
+        <button onclick="window.open('https://twitter.com','_blank')">Visit Twitter</button>
+    </div>
+</section>
+
+<!-- White Paper -->
+<section>
+    <div class="whitepaper">
+        <h2>Artificial Intelligence : Creativity in Machine</h2>
+        <p><strong>WHITE PAPER</strong></p>
+        <p>Looking to Optimise your Supply Chain?</p>
+        <button onclick="alert('White paper download starting...')">
+            Download White Paper
+        </button>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section id="consult">
+    <div class="card">
+        <h2>Get a Free Consulting Call</h2>
+        <form id="consultForm">
+            <input type="text" id="name" placeholder="Name *" required>
+            <input type="email" id="email" placeholder="Email *" required>
+            <input type="tel" id="phone" placeholder="Phone *" required>
+            <input type="text" id="company" placeholder="Company *" required>
+            <input type="text" id="industry" placeholder="Industry *" required>
+            <textarea id="summary" rows="4" placeholder="Information Summary"></textarea>
+            <input type="number" id="data_score" placeholder="Data Score">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="success" id="msg"></div>
+    </div>
+</section>
+</div>
+<script>
+document.getElementById('consultForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // stop page reload
+
+    // Collect all values
+    const data = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value,
+        industry: document.getElementById('industry').value,
+        summary: document.getElementById('summary').value,
+        data_score: parseInt(document.getElementById('data_score').value) || 0
+    };
+
+    // Send data to backend
+    fetch("http://localhost:3000/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(res => {
+        document.getElementById('msg').innerText = res.message;
+        document.getElementById('consultForm').reset();
+    })
+    .catch(err => {
+        console.error(err);
+        document.getElementById('msg').innerText = "Error submitting form.";
+    });
+});
+</script>
+<footer>
+    <h2>Send Inquiry</h2>
+
+<button onclick="gegData()">
+  View All Inquiries
+</button>
+<script>
+function gegData() {
+  window.location.href = "inquiry.html";
+}
+</script>
+© 2026 DATA Assessment | Digital Supply Chain Excellence
+</footer>
+
+<script>
+    function getData(){
+        fetch("http://localhost:3000/inquiries")
+        .then(res => res.json())
+        .then(data => {
+            console.log("Inquiries:", data);
+            alert(`Total Inquiries: ${data.length}`);
+        })
+        .catch(err => {
+            console.error("Error fetching inquiries:", err);
+            // alert("Error fetching inquiries.");
+        });
+    }
+function scrollToSection(){
+    document.getElementById("consult").scrollIntoView({behavior:"smooth"});
+}
+
+document.getElementById("consultForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("msg").innerText = 
+    "Thank you! Our team will contact you shortly.";
+    this.reset();
+});
+</script>
+
+</body>
+</html>
