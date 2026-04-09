@@ -12,7 +12,7 @@
 
 ## 🌐 Live Preview
 
-> Open `index.html` in your browser to view the website locally.
+> Open `gazelle1.html` in your browser to view the website locally.
 
 ---
 
