@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights & Articles | Gazelle</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ---------- GLOBAL ---------- */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f8fc;
+color:#333;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+section{
+padding:80px 0;
+}
+
+h1,h2{
+margin-bottom:20px;
+}
+
+h1{
+font-size:40px;
+color:#002b5b;
+text-align:center;
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:#0073e6;
+color:#fff;
+text-decoration:none;
+border-radius:5px;
+transition:.3s;
+font-size:14px;
+}
+
+.btn:hover{
+background:#005bb5;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+background:linear-gradient(to right,#002b5b,#00509e);
+color:#fff;
+padding:100px 20px;
+text-align:center;
+}
+
+.hero h1{
+color:#fff;
+font-size:42px;
+}
+
+/* ---------- BLOG GRID ---------- */
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.blog-card{
+background:#fff;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+overflow:hidden;
+transition:.3s;
+display:flex;
+flex-direction:column;
+}
+
+.blog-card:hover{
+transform:translateY(-6px);
+}
+
+.blog-img{
+height:180px;
+background:linear-gradient(135deg,#0073e6,#00509e);
+}
+
+.blog-content{
+padding:20px;
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+.blog-content h3{
+font-size:18px;
+color:#002b5b;
+margin-bottom:10px;
+}
+
+.meta{
+font-size:12px;
+color:#888;
+margin-bottom:10px;
+}
+
+.excerpt{
+font-size:14px;
+margin-bottom:20px;
+flex:1;
+}
+
+/* ---------- PAGINATION ---------- */
+.pagination{
+text-align:center;
+margin-top:50px;
+}
+
+.pagination button{
+margin:5px;
+padding:8px 14px;
+border:none;
+background:#0073e6;
+color:#fff;
+border-radius:4px;
+cursor:pointer;
+}
+
+.pagination button:hover{
+background:#005bb5;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+background:#002b5b;
+color:#fff;
+text-align:center;
+padding:20px;
+font-size:14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:768px){
+.hero h1{
+font-size:28px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<h1>Insights & Thought Leadership</h1>
+<p>Latest perspectives on digital transformation, IoT, AI, and supply chain innovation.</p>
+</div>
+</section>
+
+<!-- BLOG SECTION -->
+<section>
+<div class="container">
+
+<div class="blog-grid">
+
+<!-- BLOG 1 -->
+<div class="blog-card">
+<div class="blog-img"></div>
+<div class="blog-content">
+<h3>IoT Security in Supply Chains: Protecting Data and Assets</h3>
+<div class="meta">Kirit Goyal • July 27, 2025 • Gazelle</div>
+<div class="excerpt">
+Explore how IoT is reshaping supply chains and why securing connected devices and sensitive data is critical for operational resilience.
+</div>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<!-- BLOG 2 -->
+<div class="blog-card">
+<div class="blog-img"></div>
+<div class="blog-content">
+<h3>Digital Transformation in Supply Chain: Why It Matters in 2025</h3>
+<div class="meta">Kirit Goyal • July 27, 2025 • Gazelle</div>
+<div class="excerpt">
+Discover how digital transformation is redefining global supply chains and enabling businesses to stay competitive in a fast-changing world.
+</div>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<!-- BLOG 3 -->
+<div class="blog-card">
+<div class="blog-img"></div>
+<div class="blog-content">
+<h3>Future Trends in QR Code Tracking Technology</h3>
+<div class="meta">Kirit Goyal • July 27, 2025 • Gazelle</div>
+<div class="excerpt">
+From inventory management to logistics optimization, explore how QR tracking is evolving in 2025 and beyond.
+</div>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<!-- BLOG 4 -->
+<div class="blog-card">
+<div class="blog-img"></div>
+<div class="blog-content">
+<h3>Artificial Intelligence in Supply Chain Management</h3>
+<div class="meta">Kirit Goyal • June 28, 2025 • Gazelle</div>
+<div class="excerpt">
+Learn how AI delivers strategic advantage by enhancing forecasting, planning, and operational efficiency.
+</div>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<!-- BLOG 5 -->
+<div class="blog-card">
+<div class="blog-img"></div>
+<div class="blog-content">
+<h3>Cloud Transformation with Oracle</h3>
+<div class="meta">Kirit Goyal • June 28, 2025 • Gazelle</div>
+<div class="excerpt">
+Choosing the right implementation partner can make or break your Oracle cloud journey. Here’s what to consider.
+</div>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<!-- BLOG 6 -->
+<div class="blog-card">
+<div class="blog-img"></div>
+<div class="blog-content">
+<h3>Digital Transformation: Challenges & Solutions</h3>
+<div class="meta">Kirit Goyal • June 28, 2025 • Gazelle</div>
+<div class="excerpt">
+Understand the common barriers in supply chain transformation and practical strategies to overcome them.
+</div>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<!-- BLOG 7 -->
+<div class="blog-card">
+<div class="blog-img"></div>
+<div class="blog-content">
+<h3>Key Features of QR Code Tracking Systems</h3>
+<div class="meta">Kirit Goyal • June 28, 2025 • Gazelle</div>
+<div class="excerpt">
+Identify essential capabilities in modern QR-based tracking solutions to enhance visibility and efficiency.
+</div>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<!-- BLOG 8 -->
+<div class="blog-card">
+<div class="blog-img"></div>
+<div class="blog-content">
+<h3>Impact of IoT from Warehouse to Delivery</h3>
+<div class="meta">Kirit Goyal • May 28, 2025 • Gazelle</div>
+<div class="excerpt">
+Discover how IoT technologies improve transparency, speed, and control across the entire supply chain lifecycle.
+</div>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<!-- BLOG 9 -->
+<div class="blog-card">
+<div class="blog-img"></div>
+<div class="blog-content">
+<h3>Unlocking Business Efficiency with Data Analytics</h3>
+<div class="meta">Kirit Goyal • May 28, 2025 • Gazelle</div>
+<div class="excerpt">
+Learn how advanced analytics empowers better decisions and operational excellence in supply chain management.
+</div>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+</div>
+
+<div class="pagination">
+<button>1</button>
+<button>2</button>
+<button>Next</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Gazelle Information Technologies Pvt. Ltd. | Insights & Research
+</footer>
+
+<script>
+
+// Smooth hover enhancement for blog cards
+document.querySelectorAll(".blog-card").forEach(card=>{
+card.addEventListener("mouseenter",()=>{
+card.style.boxShadow="0 12px 30px rgba(0,0,0,0.12)";
+});
+card.addEventListener("mouseleave",()=>{
+card.style.boxShadow="0 8px 20px rgba(0,0,0,0.05)";
+});
+});
+
+</script>
+
+</body>
+</html>
