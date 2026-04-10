@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DATA Score Assessment</title>
+
+<style>
+/* ===== GLOBAL STYLES ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:60px 0;
+}
+
+h1,h2,h3{
+    color:#0d3b66;
+    margin-bottom:20px;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+button{
+    padding:12px 25px;
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#084298;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0d3b66,#0d6efd);
+    color:#fff;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.cta-btn{
+    margin-top:20px;
+}
+
+/* ===== FORM ===== */
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+form input, form select{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form textarea{
+    grid-column:span 2;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form button{
+    grid-column:span 2;
+}
+
+.success{
+    margin-top:15px;
+    font-weight:bold;
+    color:green;
+}
+
+/* ===== WHITE PAPER SECTION ===== */
+.whitepaper{
+    background:#eef3ff;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.whitepaper h2{
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0d3b66;
+    color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>DATA Score Assessment</h1>
+    <p>Empowering Digital Supply Chain Transformation</p>
+    <button class="cta-btn" onclick="scrollToForm()">Take Your DATA Assessment Now</button>
+</div>
+
+<div class="container">
+
+<!-- Methodology -->
+<section>
+    <div class="card">
+        <h2>Methodology of DATA Score Assessment</h2>
+        <p>
+        DATA research is not limited to companies and organizations. Researchers and students 
+        can also continue their research using DATA methodologies, enabling businesses to benefit 
+        from academic and industry collaboration.
+        </p>
+        <p>
+        The DATA Score is calculated using a weighted average of processes and technologies 
+        across 21 functional domains. It prioritizes areas critical to sustainability, 
+        efficiency, and digital supply chain performance.
+        </p>
+    </div>
+</section>
+
+<!-- DATA Statistics -->
+<section>
+    <div class="card">
+        <h2>DATA Statistics</h2>
+        <p>
+        Students and researchers incorporating DATA assessments into their work should 
+        include DATA statistics as they contribute valuable insights to society and industry.
+        </p>
+        <p>
+        As research data remains confidential, researchers may contact our advisor 
+        to receive an overview of DATA scoring methodology and statistical insights.
+        </p>
+    </div>
+</section>
+
+<!-- DATA Reports -->
+<section>
+    <div class="card">
+        <h2>DATA Reports</h2>
+        <p>
+        DATA reports provide insights into technologies shaping digital supply chains, including:
+        </p>
+        <ul>
+            <li>Blockchain</li>
+            <li>Internet of Things (IoT)</li>
+            <li>Digital Analytics</li>
+            <li>Artificial Intelligence (AI)</li>
+            <li>Supply Chain Coordination Systems</li>
+        </ul>
+        <p>
+        Students and researchers gain understanding of which technologies apply to each 
+        functional domain of the digital supply chain.
+        </p>
+    </div>
+</section>
+
+<!-- DATA Insights -->
+<section>
+    <div class="card">
+        <h2>DATA Insights</h2>
+        <p>
+        DATA insights demonstrate how assessments help organizations modernize supply chains 
+        and improve profitability.
+        </p>
+        <p>
+        Functional domains include:
+        </p>
+        <ul>
+            <li>Strategic Planning</li>
+            <li>Tactical Planning</li>
+            <li>Operational Management</li>
+            <li>Execution Systems</li>
+            <li>Transactional Systems</li>
+            <li>Planning Master Data</li>
+        </ul>
+        <p>
+        Adoption of advanced technologies and modern processes enhances resilience, 
+        efficiency, and competitive advantage.
+        </p>
+    </div>
+</section>
+
+<!-- White Paper -->
+<section>
+    <div class="whitepaper">
+        <h2>Artificial Intelligence: Creativity in Machine</h2>
+        <p><strong>WHITE PAPER</strong></p>
+        <p>Looking to optimise your supply chain?</p>
+        <button onclick="downloadWhitepaper()">Download White Paper</button>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contactForm">
+    <div class="card">
+        <h2>Get a Free Consulting Call</h2>
+        <form id="dataForm">
+            <input type="text" placeholder="Name *" required>
+            <input type="email" placeholder="Email *" required>
+            <input type="tel" placeholder="Phone *" required>
+            <input type="text" placeholder="Company *" required>
+            <input type="text" placeholder="Industry *" required>
+            <textarea rows="4" placeholder="Information Summary"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="success" id="formMessage"></div>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    © 2026 DATA Assessment | Digital Supply Chain Transformation
+</footer>
+
+<script>
+function scrollToForm(){
+    document.getElementById("contactForm").scrollIntoView({behavior:"smooth"});
+}
+
+function downloadWhitepaper(){
+    alert("White Paper download will begin shortly (demo version).");
+}
+
+document.getElementById("dataForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("formMessage").innerText = 
+    "Thank you! Our advisor will contact you shortly.";
+    this.reset();
+});
+</script>
+
+</body>
+</html>

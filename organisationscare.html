@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCARE Assessment | Gazelle</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* -------- GLOBAL -------- */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f8fc;
+color:#333;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+section{
+padding:80px 0;
+}
+
+h1,h2,h3{
+margin-bottom:20px;
+}
+
+h2{
+text-align:center;
+font-size:32px;
+color:#002b5b;
+margin-bottom:50px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#0073e6;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#005bb5;
+}
+
+/* -------- HERO -------- */
+.hero{
+background:linear-gradient(to right,#002b5b,#00509e);
+color:#fff;
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+margin-top:15px;
+}
+
+/* -------- INFO CARDS -------- */
+.info-card{
+background:#fff;
+padding:40px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+margin-bottom:40px;
+}
+
+/* -------- FORM -------- */
+.form-section{
+background:#eef5ff;
+padding:50px;
+border-radius:10px;
+}
+
+form input, form select{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+form label{
+font-weight:600;
+display:block;
+margin-bottom:5px;
+}
+
+.success-message{
+display:none;
+color:green;
+margin-top:15px;
+}
+
+/* -------- WHITEPAPER -------- */
+.whitepaper{
+background:#002b5b;
+color:#fff;
+text-align:center;
+padding:70px 20px;
+border-radius:10px;
+margin-top:50px;
+}
+
+.whitepaper h3{
+color:#fff;
+}
+
+/* -------- FOOTER -------- */
+footer{
+background:#002b5b;
+color:#fff;
+text-align:center;
+padding:20px;
+font-size:14px;
+margin-top:60px;
+}
+
+/* -------- RESPONSIVE -------- */
+@media(max-width:768px){
+.hero h1{
+font-size:26px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<h1>Take Your SCARE Assessment Now</h1>
+<p>Measure your supply chain sustainability, reduce risk, and unlock operational efficiency with Gazelle’s SCARE framework.</p>
+<a href="#formSection" class="btn">Check SCARE Score</a>
+</div>
+</section>
+
+<!-- WHY SCARE -->
+<section>
+<div class="container">
+
+<div class="info-card">
+<h2>Why SCARE Assessment?</h2>
+<p>
+Ever-changing customer expectations, geopolitical shifts, and global disruptions make supply chain resilience critical. 
+The SCARE Assessment helps organizations build sustainable supply chains, enhance customer experience, optimize costs, and gain competitive advantage.
+</p>
+</div>
+
+<div class="info-card">
+<h2>Who Should Take It?</h2>
+<p>
+There are no limitations — businesses, professionals, researchers, and students can benefit. 
+Organizations facing supply chain bottlenecks, using legacy systems, or not fully leveraging technology should strongly consider the SCARE Assessment.
+</p>
+</div>
+
+<div class="info-card">
+<h2>How to Use SCARE Score?</h2>
+<p>
+Your SCARE Score highlights strengths and identifies gaps in sustainability and efficiency. 
+If your score indicates room for improvement, you can focus on targeted transformation initiatives to enhance supply chain performance.
+</p>
+</div>
+
+<div class="info-card">
+<h2>How to Check Your SCARE Score</h2>
+<p>
+Simply complete the assessment form below. 
+Your results will reveal your current supply chain maturity level and areas for strategic improvement.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- FORM SECTION -->
+<section id="formSection">
+<div class="container">
+
+<div class="form-section">
+<h2>Assessment Registration</h2>
+
+<form id="scareForm">
+
+<label>Website</label>
+<input type="text" placeholder="Your Website URL">
+
+<label>Name *</label>
+<input type="text" required>
+
+<label>Email *</label>
+<input type="email" required>
+
+<label>Phone *</label>
+<input type="tel" required>
+
+<label>Company *</label>
+<input type="text" required>
+
+<label>Industry *</label>
+<select required>
+<option value="">Select Industry</option>
+<option>Manufacturing</option>
+<option>Retail</option>
+<option>Automotive</option>
+<option>Healthcare</option>
+<option>Technology</option>
+<option>FMCG</option>
+<option>Other</option>
+</select>
+
+<button type="submit" class="btn" style="width:100%;">Submit & Check Score</button>
+
+<div class="success-message" id="successMsg">
+Thank you! Our team will contact you shortly with your SCARE Assessment details.
+</div>
+
+</form>
+
+</div>
+
+</div>
+</section>
+
+<!-- WHITE PAPER CTA -->
+<section>
+<div class="container">
+
+<div class="whitepaper">
+<h3>Artificial Intelligence: Creativity in Machine</h3>
+<p>Download our whitepaper and explore how AI can optimize your supply chain operations.</p>
+<a href="#" class="btn">Download Whitepaper</a>
+</div>
+
+<div style="text-align:center;margin-top:40px;">
+<h2>Looking to Optimize Your Supply Chain?</h2>
+<a href="#" class="btn">Get a Free Consulting Call</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Gazelle Information Technologies Pvt. Ltd. | SCARE Assessment Framework
+</footer>
+
+<script>
+
+// Form Submission Simulation
+document.getElementById("scareForm").addEventListener("submit", function(e){
+e.preventDefault();
+document.getElementById("successMsg").style.display="block";
+this.reset();
+});
+
+// Smooth Scroll
+document.querySelectorAll("a[href^='#']").forEach(anchor=>{
+anchor.addEventListener("click",function(e){
+e.preventDefault();
+const target=document.querySelector(this.getAttribute("href"));
+if(target){
+target.scrollIntoView({behavior:"smooth"});
+}
+});
+});
+
+</script>
+
+</body>
+</html>
